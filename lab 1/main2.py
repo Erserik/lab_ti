@@ -25,4 +25,4 @@ def calculate_entropy(file_name):
     plt.show()
 
 
-calculate_entropy('r6.txt')
+calculate_entropy('../lab 2/r6.txt')

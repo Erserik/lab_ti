@@ -4,12 +4,12 @@ from collections import Counter
 import math
 
 s = list(string.ascii_letters)
-with open('r1.txt', 'w') as file:
+with open('../lab 2/r1.txt', 'w') as file:
     random_string = ''.join(random.choices(s, k=2000))
     file.write(random_string)
 
 b = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-with open('r2.txt', 'w') as file:
+with open('../lab 2/r2.txt', 'w') as file:
     random_digits = ''.join(random.choices(b, k=2000))
     file.write(random_digits)
 
