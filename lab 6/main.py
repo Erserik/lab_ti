@@ -12,8 +12,7 @@ def encode(s):
         r = hi - lo
         hi = lo + r * (f[c] + sum(f[cc] for cc in f if cc < c))
         lo = lo + r * sum(f[cc] for cc in f if cc < c)
-    return (lo + hi) / 2
+    return (lo + hi) / 2, f
 
 s = 'hello'
-f = calc_freq(s)
 print(encode(s))
