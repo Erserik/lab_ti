@@ -39,10 +39,9 @@ for m in messages:
     codewords.append(c)
     print(f"Сообщение: {m}, Кодовое слово: {c}")
 
-# Имитация ошибки
 print("\nОбнаружение и исправление ошибок:")
 received = codewords[0].copy()
-received[1] = 1 - received[1]  # Ошибка во 2-м бите
+received[1] = 1 - received[1]
 
 print(f"Принятое (с ошибкой): {received}")
 syndrome = detect_error(received, H)
